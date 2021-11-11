@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
-int tong(int a, int b);
+int tong(int a, int b)
+{
+	int ketqua;
+	ketqua= a + b;
+	return ketqua;
+}
 int hieu(int a, int b)
 {
 	int hieu;
