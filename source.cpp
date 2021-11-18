@@ -12,6 +12,10 @@ int hieu(int a, int b)
 	hieu=a-b;
 	return hieu;
 }
+int tich(int a, int b)
+{
+	return a*b;
+}
 
 int main()
 {
@@ -21,12 +25,14 @@ int main()
 	cin >> a;
 	cout << "Nhap so nguyen 2: ";
 	cin >> b;
-	cout << "Chon phep toan (+,-) ";
+	cout << "Chon phep toan (+,-,*) ";
 	cin >> phepToan;
 	if(phepToan =="+")
 		cout<< ketqua =tong(a,b);
 	else if(phepToan=="-")
 		cout<<ketqua =hieu(a ,b);
+	else if(phepToan=="*")
+		cout<<ketqua=tich(a,b);
 	system("pause");
 	return 0;
 }
