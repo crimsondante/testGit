@@ -16,6 +16,13 @@ int tich(int a, int b)
 {
 	return a*b;
 }
+void kiemTraChanLe( int a )
+{
+	if( a%2 ==0 )
+		cout<<"so: "+ a+" chan";
+	else cout <<"so: "+ " le";
+}
+
 
 int main()
 {
@@ -31,8 +38,11 @@ int main()
 		cout<< ketqua =tong(a,b);
 	else if(phepToan=="-")
 		cout<<ketqua =hieu(a ,b);
-	else if(phepToan=="*")
+	else if(phepToan=="*"
 		cout<<ketqua=tich(a,b);
+	cout<<" chon so can kiem chan le: ";
+	cin>>a;
+	kiemTraChanLe(a);
 	system("pause");
 	return 0;
 }
